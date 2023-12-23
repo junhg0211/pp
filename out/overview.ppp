@@ -1,0 +1,335 @@
+" welcome to pp!
+  this document  shows  how  pp langauge
+is constructed  and  how to write a code
+properly. let's get into it!
+  by the way, what you are watching is a
+comment! just write a meaningless string
+anyway on the document,  and interpreter
+will not do anything on it. "
+
+
+
+""" 1. variables and types """
+
+
+set 1_a 2
+
+" this line of code lets the variable n-
+amed '1_a' to be defined with value '2'.
+just write 'set' and the name of the va-
+riable that you want to make, and the v-
+alue!  nothing more than just think abo-
+ut it.
+  just don't forget to separate the key-
+word, name and value with spacebar char-
+acter! eazy-pizzy. "
+
+
+set 1_b!
+
+" if you don't want to set a value of it
+yet just want to declare  the namespace,
+this feature is for you! you can use ex-
+clamation mark  to let interpreter  know
+that the declaration ends there.
+  within these expressions, the value of
+the variable  will be 'none', which is a
+meaningless value to be. they turns to a
+'default value' like '0' or 'false' when
+they are used to calculate something, so
+if you don't want to care about it, just
+don't! interpreter will work for you. "
+
+
+set 1_c 3.14
+set 1_d true
+set 1_e "hello, world!"
+
+" by the way, you can use 4 default typ-
+es: zahlen, real, boolean, and text! za-
+hlen is what mathematicians call 'integ-
+er's, and 'real' is real number, boolean
+is boolean type value, and obviously te-
+xt is a text value!
+  there are two  values in boolean type:
+'true' and  'false'. to represent  them,
+just  simply type 'true' and  'false' at
+the place  of values.  interpreter knows
+what is 'true' and 'false'.
+  and for the  string, you  only can use
+double quotation marks.  this comment is
+actually string-based feature so i cann-
+ot let you show it here, but i think you
+can see at the 46th line! just like that. "
+
+
+
+""" 2. operations """
+
+
+set 2_a + 3 7
+set 2_b - 3 7
+set 2_c * 3 7
+set 2_d / 3 7
+
+" for the operation, you have to use pr-
+efix operators for everything, non-exce-
+ptionally. well i know that is very non-
+famous to most every programmers who are
+having been used to middle-place operat-
+ors, but you will be used to it.
+  you can use arithmetric operators like
+in the 70-73rd line above, and also log-
+ical binary operations you can see below! "
+
+set 2_e < 3 7
+set 2_f = 3 7
+set 2_g > 3 7
+set 2_h >= 3 7
+set 2_i != 3 7
+set 2_j <= 3 7
+set 2_k & true false
+set 2_l | true false
+
+
+
+""" 3. if conditions """
+
+
+" time of features! if conditions are m-
+ade with conditions and bunch of actions
+that can be done. you can just use this:
+notation of if control in pp language. "
+
+
+set 3_message!
+
+set 3_a 3
+set 3_b 7
+
+if < 3_a 3_b
+  set 3_message "a is less than b"!
+
+" notice that there are little exclamat-
+ion mark at the end of the line no. 111.
+it's not typo! and it's an intended fea-
+ture in pp language,  especially in code
+blocks.
+  did  you  know  that every expressions
+can be wroten linearly in  pp  language?
+you just can write  everything lienarly,
+without single return character on it! i
+can show you an example. "
+
+
+set 3_a 7 set 3_b 3
+
+
+" see? there is no error occured, just a
+feature worked so well.
+  this also  means  that you have to let
+the interpreter know where to end the if
+blocks, et another blocks you make. just
+a single exclamation mark '!' to end the
+block! keep memorising it!
+
+  also, you can use else-if and if terms
+in pp language. like so: "
+
+
+if < 3_a 3_b
+  set 3_message "a is less than b now."
+elf = 3_a 3_b
+  set 3_message "a equals b now."
+else
+  set 3_message "a is greater than b now."!
+
+
+" notice that there is only a single ex-
+clamation mark in a single if-loaf.  the
+if-elf-else  blocks are  used in  single
+place in the code, so only single excla-
+mation mark is needed in single if-loaf. "
+
+
+
+""" 4. while loops """
+
+
+" while loop is just a if loop connected
+to each other infinitely! you can use it,
+just like if you use if. but there is no
+elf or else in while, keep that in mind! "
+
+
+set 4_i 1
+set 4_sum 0
+while <= 4_i 10
+  set 4_sum + 4_sum 4_i
+  set 4_i + 4_i 1!
+
+
+
+""" 5. for loops """
+
+
+" in the for loop,  you need 5 things to
+be prepared!  a variable name,  starting
+value, ending value,  and jumping value.
+for instance,  this c code  is just same
+with  the pp code below  (let's miss the
+variable name issue):
+
+int sum = 0;
+for (int i = 1; i < 11; i += 1) {
+  sum = sum + i;
+} "
+
+
+set 5_sum 0
+for 5_i 1 11 1
+  set 5_sum + 5_sum 5_i!
+
+
+" you can see the terms 5_i, 1, 11, 1 at
+the line no. 188, and also you know that
+they are just same as in the line number
+182, innit! unfortunately there is noth-
+ing like  for-each loop  in pp language,
+but there is not as well as a list or a-
+rray! "
+
+
+
+""" 6. classes """
+
+
+" classes... they are scary, there is so
+many things to learn when  we're dealing
+with classes  and  their instances!  but
+don't worry, classes  in pp  language is
+very simple as just making things in re-
+al life. you can declare a new class wi-
+th this: "
+
+
+set 6_vector3 class
+  with x 0
+  with y 0
+  with z 0!
+
+
+" 'with' terms  are  letting interpreter
+know what variables are there in the de-
+claring type of class! the class declar-
+ed above, named '6_vector3'  has members
+of 'x', 'y', and 'z' and  their  default
+values are all defined to 0.
+  if you don't want to define the initi-
+al values  in classes, y ou just can not
+doing it! leave there nothing, and write
+the exclamation mark to let  interpreter
+know that they have no default values. "
+
+
+set 6_vector2 class
+  with x!
+  with y!!
+
+
+" they are much cutier. innit?
+  and the instances can be made with the
+name of the  variable  having the class,
+with the values  of the member variables
+in order, top-to-bottom. "
+
+
+set 6_v 6_vector2 2 3
+
+" and you also can just not set the val-
+ues! "
+
+set 6_u 6_vector2!
+
+
+" but how to use them? or call the memb-
+er variables and use them as a variable?
+you can use 'of' operator. "
+
+
+set 6_message of 6_v x
+
+" this lets you call the member variable.
+and with this, you also can set the val-
+ues on it! "
+
+set of 6_u x -3
+set of 6_u y 7
+
+
+
+""" 7. functions """
+
+
+" functions are very fundamentally impo-
+rtant feature in every programming lang-
+uages. they  are used in  abstractifying
+the  things, making  comfortable  to  do
+many things very comfortably. (?)
+  functions in pp can have parameter va-
+riables and promises  to be done. let us
+check out the examples! "
+
+
+set 7_max function a b!
+  if < a b  b
+  else      a!!
+
+set 7_min function a b!
+  if < a b  a
+  else      b!!
+
+set 7_message1 7_max 3 7
+set 7_message2 7_min 3 7
+
+
+" first of all, you use 'function' gene-
+rator to let  interpreter know  that you
+want to declare/make a function. and the
+following parameter variable names! the-
+oritically you can make  infinite amount
+of parameter variables to a single func-
+tion. but substiantially... no.
+  and after the exclamation mark to sep-
+arate between variables and actions, you
+can write  actions from then.  just like
+as in the if statement, write as many as
+you want and end it with exclamation ma-
+rk following.
+  some of you will feel curious of sett-
+ing  the  return  value of the  function
+call.  you just  calculate for write the
+name of the variable, to let interpreter
+know what is the return value. for some-
+one want  to get more clear  description
+of this, the return  value is decided to
+the  lastest value to be  read  from the
+code. for example, in the '7_max' funct-
+ion call at the ln. 292, 3 as a and 7 as
+b is given, and determined that b is gr-
+eater  than a, lastly  b  is called, and
+lefted 'else'  block is wholly  ignored,
+making 'b' to the lastly called value to
+be, resulting returning it.
+  well this description is very difficu-
+lt to understand, i know. but that's how
+pp language  works! you have to  write a
+lot of codes in  pp language to be  used
+to make features in your program comfor-
+tably. "
+
+
+
+" and that's it! you've learned every f-
+eatures in pp language fundemental basic!
+congratulations! "
